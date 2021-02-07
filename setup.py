@@ -17,7 +17,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="",
-    packages=find_packages(where='/Users/Ed/Documents/Penn/MLNPIV/boostIV'),
+    packages=find_packages(where='./boostIV'),
     license='MIT',
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -26,5 +26,5 @@ setup(
     ],
     python_requires='>=3.6',
     install_requires=['numpy', 'sklearn', 'numdifftools'],
-    package_dir={'': '/Users/Ed/Documents/Penn/MLNPIV/boostIV'}
+    package_dir={'': './boostIV'}
 )
