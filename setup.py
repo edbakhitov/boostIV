@@ -2,11 +2,14 @@
 
 from setuptools import setup, find_packages
 import pathlib
-
+import os
 here = pathlib.Path(__file__).parent.resolve()
 
 # Get the long description from the README file
 long_description = (here / 'README.md').read_text(encoding='utf-8')
+
+
+
 
 setup(
     name="boostIV",
@@ -17,7 +20,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="",
-    packages=find_packages(where='./boostIV'),
+    packages=['boostIV'],#find_packages(where=os.getcwd() + '/boostIV'),
     license='MIT',
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -26,5 +29,5 @@ setup(
     ],
     python_requires='>=3.6',
     install_requires=['numpy', 'sklearn', 'numdifftools'],
-    package_dir={'': './boostIV'}
+    #package_dir={'': os.getcwd() + '/boostIV'}
 )
