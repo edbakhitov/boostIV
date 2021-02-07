@@ -9,7 +9,7 @@ https://arxiv.org/abs/2101.06078
 ## Installation
 Before running any script you need to install the boostIV package by running
 
-```python setup.py .``` 
+```python setup.py install``` 
 
 The main dependencies are numpy, sklearn and numdifftools which will be automatically downloaded
 by running the ```setup.py``` command above. 
